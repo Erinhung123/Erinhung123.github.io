@@ -1,0 +1,214 @@
+* 
+{
+	position: relative;
+	box-sizing: border-box;
+  }
+  
+  html,
+  body {
+	height: 100%;
+  }
+  
+  html {
+	background-color: #000;
+  }
+  
+  body {
+	overflow: hidden;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: "Russo One", arial, sans-serif;
+	line-height: 1.25;
+	letter-spacing: 0.06em;
+  }
+  
+  .hide {
+	opacity: 0;
+	visibility: hidden;
+  }
+  .Happy {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 0, 0); /* Màu nền là màu vàng với độ trong suốt là 0.5 */
+	font-size: 12px;
+	
+  }
+  
+  .remove {
+	display: none !important;
+  }
+  
+  .blur {
+	-webkit-filter: blur(12px);
+			filter: blur(12px);
+  }
+  
+  .container {
+	height: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+			align-items: center;
+  }
+  
+  .loading-init {
+	width: 100%;
+	align-self: center;
+	text-align: center;
+	text-transform: uppercase;
+
+  }
+  .loading-init__header {
+	font-size: 2.2em;
+  }
+  .loading-init__status {
+	margin-top: 1em;
+	font-size: 0.8em;
+	opacity: 0.75;
+  }
+  
+  .stage-container {
+	overflow: hidden;
+	box-sizing: initial;
+	border: 1px solid #222;
+	margin: -1px;
+  }
+  @media (max-width: 840px) {
+	.stage-container {
+	  border: none;
+	  margin: 0;
+	}
+  }
+  
+  .canvas-container {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-filter 0.3s;
+	transition: -webkit-filter 0.3s;
+	transition: filter 0.3s;
+	transition: filter 0.3s, -webkit-filter 0.3s;
+  }
+  .canvas-container canvas {
+	position: absolute;
+	mix-blend-mode: lighten;
+	-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+  }
+  
+  .controls {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding-bottom: 50px;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+			justify-content: space-between;
+	-webkit-transition: opacity 0.3s, visibility 0.3s;
+	transition: opacity 0.3s, visibility 0.3s;
+  }
+  @media (min-width: 840px) {
+	.controls {
+	  visibility: visible;
+	}
+	.controls.hide:hover {
+	  opacity: 1;
+	}
+  }
+  
+  .menu {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(219, 27, 27, 0.42);
+	-webkit-transition: opacity 0.3s, visibility 0.3s;
+	transition: opacity 0.3s, visibility 0.3s;
+  }
+  .menu__inner-wrap {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+			flex-direction: column;
+	-webkit-box-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+			align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+  }
+  .menu__header {
+	margin-top: auto;
+	margin-bottom: 8px;
+	padding-top: 16px;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: 'Dancing Script', cursive;
+	color: rgb(245, 245, 31);
+  }
+  .menu__subheader {
+	margin-bottom: auto;
+	padding-bottom: 12px;
+	font-size: 0.86em;
+	opacity: 0.8;
+	font-size: 19;
+	font-family: 'Dancing Script', cursive;
+	color: rgb(245, 245, 31);
+  }
+
+  
+  .close-menu-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+  
+  
+  
+  
+  
+  @media (min-width: 840px) {
+	.btn:hover {
+	  opacity: 0.32;
+	}
+	.btn--bright:hover {
+	  opacity: 0.75;
+	}
+  }
+  .btn svg {
+	display: block;
+	margin: auto;
+  }
+  
+  
+
+
+  
+  .help-modal {
+	position: fixed;
+
+	
+  }
+ 
+  
+  
+ 
+ 
+ 
+  
+  
+  
+ 
+  
+  
+ 
+  
+ 
